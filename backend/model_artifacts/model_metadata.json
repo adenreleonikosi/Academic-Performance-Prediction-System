@@ -1,0 +1,52 @@
+{
+  "model_name": "Logistic Regression (SMOTE)",
+  "model_type": "Multiclass Classification",
+  "version": "1.0.0",
+  "training_date": "2026-02-21T00:25:00.063129",
+  "dataset_size": {
+    "total_samples": 7000,
+    "train_samples": 5500,
+    "validation_samples": 1100,
+    "test_samples": 1500
+  },
+  "features_count": 11,
+  "feature_names": [
+    "cumulative_gpa_before_sem",
+    "previous_semester_gpa",
+    "avg_gpa_change_from_previous_semester",
+    "avg_module_completion_pct",
+    "avg_video_watch_pct",
+    "avg_quiz_score",
+    "total_late_submissions",
+    "days_active",
+    "days_since_last_activity",
+    "num_failed_courses",
+    "grade_stddev_across_courses"
+  ],
+  "classes": {
+    "0": "At-Risk (GPA < 2.0)",
+    "1": "Medium (GPA 2.0-3.5)",
+    "2": "High (GPA > 3.5)"
+  },
+  "performance_metrics": {
+    "validation_set": {
+      "accuracy": 0.9982,
+      "roc_auc_ovr": 0.9995,
+      "f1_macro": 0.9957,
+      "precision_macro": 0.9922,
+      "recall_macro": 0.9991
+    },
+    "test_set": {
+      "accuracy": 0.9933,
+      "f1_macro": 0.9888,
+      "precision_macro": 0.9812,
+      "recall_macro": 0.9967
+    }
+  },
+  "hyperparameters": {
+    "model__C": 47.077598411752895,
+    "model__penalty": "l1",
+    "model__class_weight": null,
+    "smote__k_neighbors": 8
+  }
+}

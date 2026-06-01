@@ -1,0 +1,13 @@
+[
+  "cumulative_gpa_before_sem",
+  "previous_semester_gpa",
+  "avg_gpa_change_from_previous_semester",
+  "avg_module_completion_pct",
+  "avg_video_watch_pct",
+  "avg_quiz_score",
+  "total_late_submissions",
+  "days_active",
+  "days_since_last_activity",
+  "num_failed_courses",
+  "grade_stddev_across_courses"
+]
